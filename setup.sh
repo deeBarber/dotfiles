@@ -11,4 +11,7 @@ push-staging() {
 }
 export -f push-staging
 
-alias dee-test="echo hi friend"
+dee-test() {
+  echo hi friend
+}
+export -f dee-test
