@@ -10,3 +10,5 @@ push-staging() {
   git push --force origin ${branch_name}:$1
 }
 export -f push-staging
+
+alias dee-test="echo hi friend"
