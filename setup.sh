@@ -1,7 +1,7 @@
 #!/bin/bash
 
-branch-name=$(git symbolic-ref -q HEAD)
+branch_name=$(git symbolic-ref -q HEAD)
 
 push-staging() {
-  echo branch name is ${branch_name}
+  git push --force origin ${branch_name}:$1
 }
