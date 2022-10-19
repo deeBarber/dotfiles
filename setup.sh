@@ -1,3 +1,7 @@
 #!/bin/bash
 
-echo "Hey, dude"
+branch-name=$(git symbolic-ref -q HEAD)
+
+push-staging() {
+  echo branch name is ${branch_name}
+}
