@@ -9,3 +9,4 @@ push-staging() {
   fi
   git push --force origin ${branch_name}:$1
 }
+export -f push-staging
