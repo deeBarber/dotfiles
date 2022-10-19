@@ -1,8 +1,8 @@
 #!/bin/bash
 
-branch_name=$(git symbolic-ref --short HEAD)
-
 push-staging() {
+  branch_name=$(git symbolic-ref --short HEAD)
+  
   if [ $# -eq 0 ]; then
       echo "push-staging requires one argument/n"
         . "Usage: push-staging <staging_name>"
