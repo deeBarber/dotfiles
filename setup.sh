@@ -8,5 +8,5 @@ push-staging() {
         . "Usage: push-staging <staging_name>"
       return
   fi
-  git push --force origin ${branch_name}:$1
+  echo git push --force origin ${branch_name}:$1
 }
