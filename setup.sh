@@ -1,17 +1,16 @@
 #!/bin/bash
 
-push-staging() {
-  branch_name=$(git symbolic-ref --short HEAD)
-  
-  if [ $# -eq 0 ]; then
-      echo -e "push-staging requires one argument\nUsage: push-staging <staging_name>"
-      return
-  fi
-  git push --force origin ${branch_name}:$1
+rebase-master() {
+echo 'git checkout master';
+echo 'git pull';
+echo 'git checkout -';
+echo 'git rebase master';
 }
-export -f push-staging
+export -f rebase-master
 
 dee-test() {
   echo hi friend
 }
 export -f dee-test
+
+echo 'source .codespaces/.persistedshare/dotfiles/functions' >> ~/.profile
