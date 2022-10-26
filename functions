@@ -1,10 +1,7 @@
 #!/bin/bash
 
 rebase-master() {
-  echo 'git checkout master';
-  echo 'git pull';
-  echo 'git checkout -';
-  echo 'git rebase master';
+  git checkout master && git pull && git checkout - && git rebase master
 }
 export -f rebase-master
 
